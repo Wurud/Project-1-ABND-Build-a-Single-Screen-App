@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wurudaldibasi.happybirthday.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_gray">
+
+    <ImageView
+        android:id="@+id/mainImg"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainImg" >
+
+        <ImageView
+            android:id="@+id/imgSideOne"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fourspaone" />
+
+        <ImageView
+            android:id="@+id/imgSideTwo"
+            android:layout_width="215dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fourspatwo" />
+
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/mainImg"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:fontFamily="roboto-light"
+            android:paddingLeft="5dp"
+            android:paddingBottom="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="30sp"
+            android:text="Four Spa"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_above="@+id/textView6"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:autoLink="web"
+            android:text="Website: www.four.com.sa" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:text="Work Hours: 10:00 AM - 8:00 PM" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView4"
+            android:paddingLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Nail Salon in Riyadh"
+            android:textColor="@android:color/background_dark" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
